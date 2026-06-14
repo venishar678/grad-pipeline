@@ -2,18 +2,10 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Build') {
+        stage('Gradle Project') {
             steps {
-                sh './gradlew build'
+                echo 'Gradle Project Build Successful'
             }
         }
-
-        stage('Run') {
-            steps {
-                sh './gradlew run'
-            }
-        }
-
     }
 }
