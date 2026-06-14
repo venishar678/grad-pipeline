@@ -5,13 +5,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'gradle build'
+                sh './gradlew build'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'gradle run'
+                sh './gradlew run'
             }
         }
 
